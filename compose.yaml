@@ -1,0 +1,8 @@
+services:
+  quickbitedrserver:
+    image: quickbitedrserver
+    build:
+      context: backend/server
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
